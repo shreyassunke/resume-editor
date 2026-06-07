@@ -1,0 +1,129 @@
+% Jake's Resume Template
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\ifx\pdfglyphtounicode\undefined\else\input{glyphtounicode}\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+% Justify body text (no ragged-right whitespace); allow looser spacing to avoid overfull lines
+\hyphenpenalty=2000
+\tolerance=3000
+\emergencystretch=2em
+
+% Sections formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable (pdfLaTeX only; XeTeX/LuaTeX are Unicode-native)
+\ifx\pdfgentounicode\undefined\else\pdfgentounicode=1\fi
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{\small#3} & \textit{\small #4} \\\end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Shreyas Sunke} \\ \vspace{1pt}
+    \small (425) 503-0100 $|$ \href{mailto:ssunke@uw.edu}{ssunke@uw.edu} $|$
+    \href{https://linkedin.com/in/ssunke}{linkedin.com/in/ssunke} $|$
+    \href{https://github.com/shreyassunke}{github.com/shreyassunke} $|$
+    \href{https://ssunke.vercel.app/}{ssunke.vercel.app}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington, Seattle}{Sep 2026 -- Jun 2028 (Expected)}
+      {Bachelor of Science in Informatics}{Seattle, WA}
+    \resumeSubheading
+      {Indiana University, Bloomington}{Aug 2024 -- May 2026}
+      {Bachelor of Science in Business \& Informatics (GPA: 3.8/4.00)}{Bloomington, IN}
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {HUMN AI}{May 2025 -- Present}
+      {Project Lead}{Remote}
+      \resumeItemListStart
+        \resumeItem{Led a cross-functional engineering team and drove full-stack website architecture decisions across reliability, scalability, and cost, defining technical standards and CI/CD workflows that supported sustainable platform growth.}
+        \resumeItem{Developed core marketplace functionality enabling seamless browsing of and interaction with digital human avatars, building reusable React components and REST APIs that supported onboarding of 20+ vendors and 50+ product listings.}
+        \resumeItem{Integrated the Stripe payment system into a Node.js backend to power commercial transactions, subscription billing, and secure product licensing, implementing webhook-driven order fulfillment and PCI-compliant checkout flows.}
+        \resumeItem{Designed a full-stack e-commerce architecture using a Next.js frontend, Node.js backend, MongoDB document store, and AWS S3 for avatar asset delivery, achieving sub-2s page load times across 50+ product pages.}
+        \resumeItem{Identified cost-saving dependencies and tooling including Clerk authentication and AWS managed services, reducing projected monthly infrastructure costs by 30\% while improving deployment reliability and application security.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {ProfessorAI}{November 2023 -- June 2024}
+      {Head of Business Operations, VP of Marketing, Project Manager}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Managed a 6-member engineering and content team to deliver 32 AP courses, boosting delivery throughput with AI-assisted workflows and orchestrating LaTeX/KaTeX formatting pipelines in collaboration with the dev team.}
+        \resumeItem{Spearheaded marketing campaigns and presented at EdTech conferences, securing College Board approval for AP content and producing 10+ SEO-driven videos that boosted brand visibility and partner outreach.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Kappa Theta Pi Professional Tech Fraternity}{January 2025 -- Present}
+      {National Director of Finance \& Alpha Eta Chapter VP of Finance}{Bloomington, IN}
+      \resumeItemListStart
+        \resumeItem{Established the fraternity's first financial infrastructure by researching banking options, negotiating terms, and opening accounts with local IU-based banks, building a structured framework to guide future budgeting.}
+        \resumeItem{Built semester budgets and structured member dues using Excel-based financial analysis to optimize cash flow, allocate resources efficiently, and support executive board decisions based on chapter strength and demand.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ATLAS}{Jan 2025 -- Present}
+      {Founder \& Lead Developer}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Architected a full-stack application using Next.js, Python, a vector database, and LLM APIs, enabling real-time document ingestion, embedding generation, and semantic search across large, unstructured corpora.}
+        \resumeItem{Engineered a retrieval-augmented generation (RAG) pipeline that surfaces context-aware, source-cited insights from heterogeneous data sources, significantly reducing manual research and synthesis time for users.}
+        \resumeItem{Currently developing advanced source-tracking, citation, and knowledge-graph features to expand the use case into academic literature review and professional, domain-specific research workflows.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Python, SQL, HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: Next.js, React, Node.js, REST APIs} \\
+     \textbf{Tools \& Platforms}{: MongoDB, Vector DB, AWS S3, Stripe, Clerk, Git, Jira, Slack, Excel, LaTeX/KaTeX} \\
+     \textbf{Concepts}{: RAG, LLM APIs, Semantic Search, Full-Stack Development, CI/CD, E-commerce Infrastructure, Data Analysis, Product Strategy, Project Management}
+    }}
+ \end{itemize}
+
+\end{document}
