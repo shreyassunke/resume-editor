@@ -2,6 +2,14 @@
 % Author: Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License: MIT
+%
+% ============================================================================
+% VERSION 2 - FINTECH / DATA SCIENCE
+% Targets: Fintech SWE Intern, Data Science Intern, Quant/Analytics Intern @
+% Stripe, Remitly, Accolade, Gravity Payments. See README.md in this folder
+% for the sub-role swap cheat sheet (fintech SWE / data science / quant).
+% Section order surfaces finance + data work (KTP, DSAIL) above projects.
+% ============================================================================
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -83,27 +91,16 @@
       {HUMN AI}{May 2025 -- Present}
       {Project Lead}{Remote}
       \resumeItemListStart
-        \resumeItem{Led a cross-functional engineering team and drove full-stack website architecture decisions across reliability, scalability, and cost, defining technical standards and CI/CD workflows that supported sustainable platform growth.}
-        \resumeItem{Developed core marketplace functionality enabling seamless browsing of and interaction with digital human avatars, building reusable React components and REST APIs that supported onboarding of 20+ vendors and 50+ product listings.}
         \resumeItem{Integrated the Stripe payment system into a Node.js backend to power commercial transactions, subscription billing, and secure product licensing, implementing webhook-driven order fulfillment and PCI-compliant checkout flows.}
         \resumeItem{Designed a full-stack e-commerce architecture using a Next.js frontend, Node.js backend, MongoDB, and AWS S3 to achieve sub-2s page load times across 50+ product pages, and identified Clerk and AWS optimizations that cut projected monthly infrastructure costs by 30\%.}
+        \resumeItem{Developed core marketplace functionality enabling seamless browsing of and interaction with digital human avatars, building reusable React components and REST APIs that supported onboarding of 20+ vendors and 50+ product listings.}
+        \resumeItem{Led a cross-functional engineering team and drove full-stack architecture decisions across reliability, scalability, and cost, defining technical standards and CI/CD workflows that supported sustainable platform growth.}
       \resumeItemListEnd
     \resumeSubheading
       {ProfessorAI}{November 2023 -- June 2024}
       {Head of Business Operations, VP of Marketing, Project Manager}{Seattle, WA}
       \resumeItemListStart
         \resumeItem{Managed a 6-member engineering and content team to deliver 32 AP courses, boosting delivery throughput with AI-assisted workflows and orchestrating LaTeX/KaTeX formatting pipelines in collaboration with the dev team.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {ATLAS $|$ \href{https://atlasgi.vercel.app}{atlasgi.vercel.app}}{Jan 2025 -- Present}
-      {Founder \& Lead Developer}{Seattle, WA}
-      \resumeItemListStart
-        \resumeItem{Built and deployed a real-time OSINT intelligence platform visualizing global events on an interactive 3D globe, integrating the GDELT Project dataset, Google Maps API, and multiple open-source intelligence feeds via React, Cesium, and globe.gl.}
-        \resumeItem{Engineered a geospatial data pipeline using Supabase, Turf.js, and MapLibre to process, normalize, and render live event data across geographic layers — enabling near real-time situational awareness of global news patterns.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -121,16 +118,29 @@
       {National Director of Finance \& Chapter VP of Finance}{Bloomington, IN}
       \resumeItemListStart
         \resumeItem{Established the fraternity's first financial infrastructure by researching banking options, negotiating terms, and opening accounts with local IU-based banks, building a structured framework to guide future budgeting.}
+        % TODO (verify metric): add real dollar figure / member count if available.
+        \resumeItem{Built and maintained the chapter budgeting and dues-tracking framework, standardizing financial reporting and reconciliation processes across [PLACEHOLDER: add budget size or member count] to support transparent treasury management.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ATLAS $|$ \href{https://atlasgi.vercel.app}{atlasgi.vercel.app}}{Jan 2025 -- Present}
+      {Founder \& Lead Developer}{Seattle, WA}
+      \resumeItemListStart
+        \resumeItem{Built and deployed a real-time OSINT intelligence platform visualizing global events on an interactive 3D globe, integrating the GDELT Project dataset, Google Maps API, and multiple open-source intelligence feeds via React, Cesium, and globe.gl.}
+        \resumeItem{Engineered a geospatial data pipeline using Supabase, Turf.js, and MapLibre to process, normalize, and render live event data across geographic layers — enabling near real-time situational awareness of global news patterns.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript, Python, SQL, HTML/CSS} \\
-     \textbf{Frameworks \& Libraries}{: Next.js, React, Node.js, REST APIs} \\
-     \textbf{Tools \& Platforms}{: MongoDB, Vector DB, AWS S3, Stripe, Clerk, Git, Jira, Slack, Excel, LaTeX/KaTeX} \\
-     \textbf{Concepts}{: RAG, LLM APIs, Semantic Search, Full-Stack Development, CI/CD, E-commerce Infrastructure, Data Analysis, Product Strategy, Project Management}
+     \textbf{Languages}{: Python, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: Pandas, REST APIs, Next.js, Node.js, React} \\
+     \textbf{Tools \& Platforms}{: Stripe, MongoDB, AWS S3, Vector DB, Git, Excel, LaTeX/KaTeX} \\
+     \textbf{Concepts}{: Data Pipelines, Financial Modeling, ETL, Payments \& Billing, Analytics, RAG, Semantic Search, API Integration, E-commerce Infrastructure}
     }}
  \end{itemize}
 
